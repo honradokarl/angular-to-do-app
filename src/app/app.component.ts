@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'myapp';
+
+  name:string = 'Karl';
+
+  constructor() {
+    this.changeName('John');
+  }
+
+  changeName(name: string):void {
+    this.name = name;
+  }
+
 }
